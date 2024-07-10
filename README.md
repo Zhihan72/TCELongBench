@@ -8,4 +8,4 @@ Please check [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 
 # Codes
 
-We would upload the code for constructing our dataset amd evaluating models within one week.
+We would upload the code for constructing our dataset and evaluating models within one week.
