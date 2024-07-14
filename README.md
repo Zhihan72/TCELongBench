@@ -12,10 +12,10 @@ Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 
 ```
 {
-  "ce_id": xxx,
-  "date": xx-xx-xxxx,
-  "Md5_id": xxxxxxxxxxxxxxx,
-  "text": "xxxxxxx"
+  "ce_id": [int] The TCE id,
+  "date": [str] The date of this news article,
+  "Md5_id": [str] The unique id of this news article,
+  "text": [str] The content of this news article,
 }
 ```
 
@@ -23,16 +23,16 @@ Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 
 ```
 {
-  "ce_id" :
-  "date" :
-  "point" :
-  "point_id" :
-  "denoise_val":
-  "dup_loc" :
-  "dup_val" :
-  "sim_loc" :
-  "sim_val" :
-  "keep_val" :
+  "ce_id": [int] The TCE id,
+  "date": [str] The date of this outline point,
+  "point": [str] The content of this outline point,
+  "point_id": [int] This id is used for differentiating the outline points in the same TCE on the same date. We use the combination of date and point_id, i.e. (date, point_id), to identify each outline point in the TCE,
+  "denoise_val": [bool] 1 for noising outline point that should be deleted; otherwise 0,
+  "dup_loc": [list] This list consists of the information of points that this outline point duplicate. We use (date, point_id) to locate these points and save them in a list, 
+  "dup_val": [bool] 1 for outline point that duplicate point(s) with earlier date(s); otherwise 0,
+  "sim_loc": [list] This list consists of the information of points that share high similarity scores with this outline point . We use (date, point_id) to locate these points and save them in a list, 
+  "sim_val": [bool] 1 for outline point that shares high similarity score(s) with point(s) with earlier date(s); otherwise 0,
+  "keep_val": [bool] 1 for outline point whose denoise_val, dup_val and sim_val are all 0,
 }
 ```
 
