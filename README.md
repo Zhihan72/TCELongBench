@@ -6,12 +6,85 @@ We refer to the complex events composed of many news articles over an extended p
 
 # Dataset
 
-Please check [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkersh2kT510HPwtgCakp6?usp=sharing) to download the training, development and test sets and their corresponding news articles. Detailed descriptions of these sets and news articles would be updated within one week.
+Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkersh2kT510HPwtgCakp6?usp=sharing) to download our dataset, including news articles and outlines of TCEs and TCELongBench.
 
-## Outline Extraction
+## TCE
 
+```
+{
+  "ce_id": xxx,
+  "date": xx-xx-xxxx,
+  "Md5_id": xxxxxxxxxxxxxxx,
+  "text": "xxxxxxx"
+}
+```
+
+## Outline
+
+```
+{
+  "ce_id" :
+  "date" :
+  "point" :
+  "point_id" :
+  "denoise_val":
+  "dup_loc" :
+  "dup_val" :
+  "sim_loc" :
+  "sim_val" :
+  "keep_val" :
+}
+```
 
 ## TCELongBench
+
+For TLB-detail task
+```
+{
+  "ce_id" : xxx,
+  "Md5_1" : xxxxxxxxxxxxxxx,
+  "Md5_2" : xxxxxxxxxxxxxxx,
+  "day_1" : xx-xx-xxxx,
+  "day_2" : xx-xx-xxxx,
+  "point_id" : xx,
+  "question" : "xxxxxxx",
+  "answer" : "xxxxxxx",
+  "evidence" : "xxxxxxx",
+  "choices" : "xxxxxxx",
+  "shuffle_order" : "xxxxxxx",
+  "ground_truth" : X
+}
+```
+
+For TLB-order task
+```
+{
+  "ce_id" :
+  "common_ent" :
+  "points_id" :
+  "day" :
+  "choices" :
+  "ground_truth" :
+}
+```
+
+For TLB-forecast task
+```
+{
+  "ce_id" : xxx,
+  "Md5_1" : xxxxxxxxxxxxxxx,
+  "Md5_2" : xxxxxxxxxxxxxxx,
+  "day_1" : xx-xx-xxxx,
+  "day_2" : xx-xx-xxxx,
+  "point_id" : xx,
+  "question" : "xxxxxxx",
+  "answer" : "xxxxxxx",
+  "evidence" : "xxxxxxx",
+  "choices" : "xxxxxxx",
+  "shuffle_order" : "xxxxxxx",
+  "ground_truth" : X
+}
+```
 
 # Code
 
