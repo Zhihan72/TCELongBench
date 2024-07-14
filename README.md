@@ -86,11 +86,30 @@ For TLB-forecast task
 }
 ```
 
-# Code
+# Code for Dataset Construction
 
 ## Outline Extraction
 
+The prompt and code for outline extraction of TCE are saved in `outline_extraction` folder
+
 ## Generate-then-verify Paradigm
 
-## Experiment
+The prompt and code for generate-then-verify paradigm of TCE are saved in `generate_then_verify_paradigm` folder
 
+# Contact
+
+For any issues or questions, kindly email us at: ZHANG Zhihan (zhangzhihan22@m.fudan.edu.cn).
+
+# Citation
+
+```
+@misc{zhang2024analyzingtemporalcomplexevents,
+      title={Analyzing Temporal Complex Events with Large Language Models? A Benchmark towards Temporal, Long Context Understanding}, 
+      author={Zhihan Zhang and Yixin Cao and Chenchen Ye and Yunshan Ma and Lizi Liao and Tat-Seng Chua},
+      year={2024},
+      eprint={2406.02472},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2406.02472}, 
+}
+```
