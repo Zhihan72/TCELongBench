@@ -10,6 +10,8 @@ Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 
 ## TCE
 
+News articles within TCEs are saved in `TCE_News_Articles.json` and contains the following attributes:
+
 ```
 {
   "ce_id": [int] The TCE id,
@@ -19,7 +21,11 @@ Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 }
 ```
 
+Note that `TCE_ce_id.txt` contains the list of TCE id that is used in constructing our TCELongBench.
+
 ## Outline
+
+Outline points within TCEs are saved in `outline_points.csv` and contains the following attributes:
 
 ```
 {
@@ -38,7 +44,9 @@ Please click [this link](https://drive.google.com/drive/folders/1sca15cVDE9zkers
 
 ## TCELongBench
 
-For TLB-detail task
+### TLB-detail
+
+The training, development, and test sets of TLB-detail task are saved in `TLB_detail_TrainSet.csv`, `TLB_detail_DevSet.csv`, and `TLB_detail_TestSet.csv`, respectively. They contain the following attributes:
 ```
 {
   "ce_id" : xxx,
@@ -55,8 +63,9 @@ For TLB-detail task
   "ground_truth" : X
 }
 ```
+### TLB-order
 
-For TLB-order task
+The training, development, and test sets of TLB-order task are saved in `TLB_order_TrainSet.csv`, `TLB_order_DevSet.csv`, and `TLB_order_TestSet.csv`, respectively. They contain the following attributes:
 ```
 {
   "ce_id" :
@@ -68,7 +77,9 @@ For TLB-order task
 }
 ```
 
-For TLB-forecast task
+### TLB-forecast
+
+The training, development, and test sets of TLB-forecast task are saved in `TLB_forecast_TrainSet.csv`, `TLB_forecast_DevSet.csv`, and `TLB_forecast_TestSet.csv`, respectively. They contain the following attributes:
 ```
 {
   "ce_id" : xxx,
